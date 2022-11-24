@@ -1,99 +1,94 @@
-.img_banner{
-    width: 100%;
-    /* height: 200px; */
-    background-size: cover;
-    margin-bottom: 20px;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.img_banner img{
-    width: 100%;
-    height: 150px
-    
+body{
+    background-color: black;
 }
 
-.content{
-    width:95%;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
+img{
+    width: 100%;
+    height: auto;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+/* -------------------------- */
+
+.main {
+    width: 90%;
     display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    color: white;
-    
-}
-
-.card{
-    width: 45%;
-    margin-left: 5px;
-    margin-bottom: 20px;
-    position: relative;
-    margin-bottom: 40px;
-}
-
-.content .card img{
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0.5px 0.5px 5px white;
-}
-
-.nombre{
-    font-size: 12px;
-    margin-bottom: -2px;
-    margin-top: 0px;
-}
-
-.price{
-    width: 35%;
-    background-color: lightcoral;
-    color: black;
-    position: absolute;
-    top: 0px;
-    padding-left: 5px;
-    border-radius: 10px 0 0 0;
-}
-
-.botton{
-    width: 70%;
-    height: 25px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 6px;
-    display: block;
-    background-color: red;
+    justify-content:space-between;
+}
+
+
+.container_slider{
+    width: 40%;
+    /* max-width: 300px; */
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+    /* display: flex; */
+}
+
+.slider{
+    display: flex;
+    width: 300%; /* Segun las imagenes que vas a colocar, en este caso colo 3, 100% por imagen */
+    /* height: 400px; */
+    margin-left: -100%;
+}
+
+.secondary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider_btn{
+    position: absolute;
+    width: 20px;
+    height: 20px;
     text-align: center;
-    border-radius: 20px;
-    text-decoration: none;
+    background-color: black;
     color: white;
-    box-shadow: 2px 2px 10px white;
+    opacity: 0.5;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    font-weight: bold;
+    justify-content: space-between;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
-.botton::before{
-    content: "Lo Quiero!";
+.slider_btn-left{
+    right: 1px;
+    padding: 2px 0 0 0;    
+}
+.slider_btn-right{
+    left: 1px;
+    padding: 2px 0 0 0;    
 }
 
-/* Precios */
 
-.price_first_edition::before{
-    content: "S/.70";
-}
+/* .slider_img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+} */
 
-.price_diamon::before{
-    content: "S/.90";
-}
-
-.price_sport::before{
-    content: "S/.70";
-}
-
-.price_block::before{
-    content: "S/.85";
-}
-
-.price_bamboo::before{
-    content: "S/.120";
-}
-
-.price_frame::before{
-    content: "S/.75";
-}
+/* .container_slider{
+    width: 90%;
+    margin-left:auto;
+    margin-right:auto;
+}  */
