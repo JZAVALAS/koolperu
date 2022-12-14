@@ -305,11 +305,15 @@ marquee{
 }
 
 .price_bamboo::before{
-    content: "S/.120";
+    content: "S/.100";
 }
 
 .price_frame::before{
     content: "S/.75";
+}
+
+.price_koolscreen::before{
+    content: "S/.80";
 }
 /* --------------------- */
 
