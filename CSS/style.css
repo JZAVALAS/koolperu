@@ -315,6 +315,10 @@ marquee{
 .price_koolscreen::before{
     content: "S/.80";
 }
+
+.price_Diamonlady::before{
+    content: "S/.70";
+}
 /* --------------------- */
 
 
