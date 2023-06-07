@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.mivideo_bg{
+    width: 100%;
+}
+
+
+.div_texto{
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logokool{
+    max-width: 30vw;
+    max-height: auto;
+    margin-bottom: 1rem;
+}
+
+.texto{
+    margin-bottom: 1.3rem;
+    color: white;
+    text-align:center;
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px black
+}
+
+.btningresar{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    border: thin solid blue;
+    border-radius: 1.5em;
+    padding: .4em;
+    text-align: center;
+    background-color: rgba(0,0,0,.50)
+}
+
+
