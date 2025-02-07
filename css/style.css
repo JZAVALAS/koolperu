@@ -1,0 +1,197 @@
+/* Estilos CSS para la tienda de lentes de sol */
+html{
+    background-color: #000000;
+    color: #f5f5f5;
+    box-sizing: border-box;
+}
+
+
+*,
+*::after,
+*::before{
+    scroll-behavior: smooth;
+    box-sizing:inherit
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Cambiado para ocupar toda la pantalla */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-overlay {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0;
+}
+
+.hero-overlay h1{
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-shadow: 10px 5px 10px rgba(251, 249, 249, 0.5);
+    max-width: 800px;
+}
+
+.hero .cta-button {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.menu {
+    background: #333;
+    color: white;
+    margin-top: 15px;
+    padding: 20px 20px;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: #f5f5f5;
+    border-radius: 50PX;
+    font-weight: bold;
+}
+
+.behavior{  
+    background-color: #ffff00;
+    color: #000000;
+    padding: 2px;
+    position: sticky;
+    top: 60px;
+    font-size: .8rem;
+    font-weight: bold;
+    z-index: 999;
+}
+
+.catalogo {
+    padding: 20px;
+    text-align: center;
+}
+
+
+.catalogo h2{
+    font-size: 2rem;
+}
+
+
+.producto {
+    border: 1px solid #ddd;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(252, 252, 252, 0.5);
+    display: inline-block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
+    margin-bottom: -5px;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.slider img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+@keyframes pulse {
+
+    0%,50%{transform: translateY(0);}
+    40%{transform: translateY(-10px);}
+    60%{transform: translateY(-5px);}
+
+    /* 0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.03);
+    }
+    100%{
+        transform: scale(1);
+    } */
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: #0a0a0a;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+}
+
+.btn-whatsapp::after{
+    content: "comprar ahora";
+}
+
+.otro::before{
+    content: "KdeamSunglasses";
+}
+
+.kool::before{
+    content: "KoolPeruSunglasses";
+}
+
+.bamboo_p::before{
+    content: "Kool Personalizables";
+}
