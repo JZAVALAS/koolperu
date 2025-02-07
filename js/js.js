@@ -1,6 +1,6 @@
 // Función para redirigir a WhatsApp
 function comprarPorWhatsapp(mensaje) {
-    const numeroWhatsApp = "51912345678"; // Reemplaza con tu número
+    const numeroWhatsApp = "51964774354"; // Reemplaza con tu número
     const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
     window.open(url, '_blank');
 }
