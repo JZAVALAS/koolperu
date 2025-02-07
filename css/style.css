@@ -155,11 +155,9 @@ body {
 }
 
 @keyframes flechas {
-
     0%,50%{transform: translateX(0);}
     40%{transform: translateX(-5px);}
     60%{transform: translateX(-3px);}
-
 }
 
 .slider {
