@@ -7,7 +7,7 @@ function comprarPorWhatsapp(mensaje) {
 
 // Función para filtrar productos por categoría
 function filtrarCategoria(categoria) {
-    const productos = document.querySelectorAll('.producto');
+    const productos = document.querySelectorAll('.producto, .producto-header');
     const botones = document.querySelectorAll('.menu a');
 
     // Mostrar u ocultar productos según la categoría
