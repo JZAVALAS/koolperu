@@ -13,14 +13,13 @@
 </head>
 <body>
     <!-- Hero Section -->
-    <header class="hero">
-        <video autoplay muted loop class="hero-video">
-            <source src="assets/hero-video.mp4" type="video/mp4">
-            Tu navegador no soporta videos HTML5.
-        </video>
-        <div class="hero-overlay">
-            <h1>Por que el estilo es personal y tus lentes también</h1>
-            <a href="#espacio" class="cta-button">Ver Catálogo</a>
+    <header class="header">
+        <div class="header-logo">
+            <div class="img">
+                <img src="assets/kool_logo.png" alt=""></div>
+            </div>
+        </div>
+        <div class="hero-image">
         </div>
     </header>
 
@@ -28,9 +27,9 @@
     <!-- Menú de navegación -->
     <nav class="menu" id="menu">
         <ul>
-            <li><a href="#espacio" onclick="filtrarCategoria('personalizados')">Bambú</a></li>
-            <li><a href="#espacio" onclick="filtrarCategoria('kool')">Kool</a></li>
-            <li><a href="#espacio" onclick="filtrarCategoria('otros')">Otros</a></li>
+            <li><a href="#espacio" onclick="filtrarCategoria('personalizados')"><img src="assets/cat_bambu.png" alt=""></a></li>
+            <li><a href="#espacio" onclick="filtrarCategoria('kool')"><img src="assets/cat_kool.png" alt=""></a></li>
+            <li><a href="#espacio" onclick="filtrarCategoria('otros')"><img src="assets/cat_otros.png" alt=""></a></li>
         </ul>
     </nav>
     <marquee class="behavior">Envios a todo el Perú</marquee>
@@ -535,7 +534,7 @@
 
     </section>
 
-    <footer>
+    <footer class="footer">
 
     </footer>
 </body>
