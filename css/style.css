@@ -43,11 +43,9 @@ body {
 
 .hero-image{
     width: 100%;
-    height: 90vh;
-    /* object-fit: cover; */
+    height: 80vh;
     background: url("../assets/portada_1.jpg") center no-repeat;
     background-size: cover;
-
     opacity: .7;
 }
 
