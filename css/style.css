@@ -46,7 +46,7 @@ body {
     height: 90vh;
     /* object-fit: cover; */
     background: url("../assets/portada_1.jpg") center no-repeat;
-    background-size: contain;
+    background-size: cover;
 
     opacity: .7;
 }
