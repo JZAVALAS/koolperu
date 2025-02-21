@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Construir el mensaje de WhatsApp
             // ${nombreProducto}
             let mensaje = encodeURIComponent(
-                `Hola, quiero comprar este producto: \n\nImagen del producto: ${urlImagen}\n\nPrecio: ${precioProducto}`
+                `Hola, quiero comprar este producto: \n\nImagen del producto: ${urlImagen}\n\n${precioProducto}`
             );
 
             // Crear enlace de WhatsApp
