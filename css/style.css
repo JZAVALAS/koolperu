@@ -44,9 +44,9 @@ body {
     background: url("../assets/portada_2.jpg");
     background-size: cover;
     background-position: center;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 
