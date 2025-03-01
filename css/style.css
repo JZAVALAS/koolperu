@@ -42,7 +42,8 @@ body {
     max-width: 100%;
     height: 90vh;
     background: url("../assets/portada_2.jpg");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     /* display: flex;
     align-items: center;
