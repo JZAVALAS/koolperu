@@ -29,15 +29,21 @@
     </header>
 
     <div id="espacio"></div>
-    <!-- Menú de navegación -->
-    <nav class="menu" id="menu">
-        <ul>
-            <li><a href="#espacio" onclick="filtrarCategoria('personalizados')"><img src="assets/cat_bambu.png" alt=""></a></li>
-            <li><a href="#espacio" onclick="filtrarCategoria('kool')"><img src="assets/cat_kool.png" alt=""></a></li>
-            <li><a href="#espacio" onclick="filtrarCategoria('otros')"><img src="assets/cat_otros.png" alt=""></a></li>
-        </ul>
+
+    <!-- Menú Hamburguesa -->
+    <input type="checkbox" class="off-canvas-btn">
+    <label class="off-canvas-burguer"></label>
+    <nav class="off-canvas-menu">
+        <div class="off-canvas-menu-container">
+            <a href="#espacio" class="off-canvas-link" onclick="filtrarCategoria('personalizados')">Personalizables</a>
+            <a href="#espacio" class="off-canvas-link" onclick="filtrarCategoria('kool')">KoolSunglasses</a>
+            <a href="#espacio" class="off-canvas-link" onclick="filtrarCategoria('otros')">Otras Marcas</a>
+        </div>
     </nav>
-    <marquee class="behavior">Envios a todo el Perú</marquee>
+   
+    
+    <div class="espacio"></div>
+    <marquee class="behavior" id="behavior">Envios a todo el Perú</marquee>
 
     <!-- Catálogo de productos -->
     <section id="catalogo" class="catalogo">
