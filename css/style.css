@@ -32,7 +32,8 @@ body {
 }
 
 .header-logo .img{
-    height: 2.5rem;
+    margin-top: .5rem;
+    height: 3rem;
     display: flex;
     justify-self: center;
     overflow-y:hidden;
