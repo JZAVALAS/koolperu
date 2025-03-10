@@ -40,14 +40,14 @@ body {
 
 .hero-image{
     max-width: 100%;
-    height: 70vh;
+    height: 90vh;
     background: url("../assets/portada_2.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
 }
 
 /*Menú Hamburguesa*/
@@ -278,30 +278,15 @@ body {
     content: "Kool Personalizables";
 }
 
-.uv-pol-1mgar{
-    max-width: 100%;
-    height: 4rem;
-    margin-bottom: 1.5rem;
-    background: url("../assets/uv-pol-1mgar.jpg");
-    background-size: cover;
-    background-position: 65% 0;
+
+.uv-pol-gar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
-.uv-pol-2mgar{
-    max-width: 100%;
-    height: 4rem;
-    margin-bottom: 1.5rem;
-    background: url("../assets/uv-pol-2mgar.jpg");
-    background-size: contain;
-    background-position: 65% 0;
-}
-
-.uv-pol-3mgar{
-    max-width: 100%;
-    height: 4rem;
-    margin-bottom: 1.5rem;
-    padding-bottom: 2rem;
-    background: url("../assets/uv-pol-3mgar.jpg");
-    background-size: contain;
-    background-position: 65% 0;
+.uv-pol-gar img{
+   width: 4rem;
+   height: 4rem;
 }
