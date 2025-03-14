@@ -57,7 +57,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     margin-top: .5rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 .behavior{
@@ -298,4 +298,8 @@ body {
 .uv-pol-gar img{
    width: 4rem;
    height: 4rem;
+}
+
+.espacio{
+    margin-bottom: 3rem;
 }
