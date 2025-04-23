@@ -7,632 +7,687 @@
     <link rel="apple-touch-icon" href="assets/favicon.png">
     <meta name="theme-color" content="#272727">
     <link rel="icon" href="assets/favicon.png">
-    <title>KoolPeruSunglasses - Tienda de lentes de sol Personalizados</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- Font-aweson icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-
-    <script defer src="js/js.js"></script>
+    <title>WebKool</title>
+    <script src="js/js.js"></script>
 </head>
 <body>
-    <!-- Hero Section -->
-    <header class="header">
-        <div class="header-logo">
-            <a href="index.html"><img src="assets/kool_logo.png" alt=""></div></a>
-        </div>   
-    </header>
+
+
+    <nav>
+        <a href="#personalizables" class="off-canvas-link" onclick="filtrarCategoria('personalizados')">Personalizables</a>
+        <a href="#kool" class="off-canvas-link" onclick="filtrarCategoria('kool')">KoolPeru</a>
+        <div class="logo">
+            <!-- <a href="index.html"><img src="assets/kool_logo.png" alt="Logo"></a> -->
+            <img src="assets/kool_logo.png" alt="Logo">
+        </div>
+        <a href="#kdeam" class="off-canvas-link" onclick="filtrarCategoria('otros')">Otra Marca</a>
+        <a href="#accesorios" class="off-canvas-link" onclick="filtrarCategoria('accesorios')">Accesorios</a>
+
+    </nav>
+
+    <!-- Checkbox oculto -->
+    <input type="checkbox" id="toggle-menu">
+
+    <!-- Botón del menú -->
+     <label for="toggle-menu" class="menu-btn">
+        <div>☰</div>
+        <div>M</div>
+        <div>E</div>
+        <div>N</div>
+        <div>Ú</div>
+     </label>
+
+     <!-- Menú lateral -->
+      <div class="menu">
+        <h3>Categorías</h3>
+        <a href="index.html" class="link">Inicio</a>
+        <a href="#personalizables" class="off-canvas-link link" onclick="filtrarCategoria('personalizados')">Personalizados</a>
+        <a href="#kool" class="off-canvas-link link" onclick="filtrarCategoria('kool')">Kool Perú</a>
+        <a href="#kdeam" class="off-canvas-link link" onclick="filtrarCategoria('otros')">Otras Marcas</a>
+        <a href="#accesorios" class="off-canvas-link link" onclick="filtrarCategoria('accesorios')">Accesorios Kool</a>
+        <br>
+        <div class="rrss">
+            <h3>Siguenos en:</h3>
+            <section class="container-rrss">
+                <a href="https://www.facebook.com/KoolPeruSunglassess" class="link" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/KoolPeru" class="link" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@koolperusunglasses?lang=es" class="link" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            </section>
+        </div>
+      </div>
+
+      <!-- Fondo oscuro para cerrar -->
+       <label for="menu-toggle" class="overlay"></label>
+
 
     <div class="hero-image"></div>
-
-    <!-- Menú Hamburguesa -->
-    <input type="checkbox" class="off-canvas-btn">
-    <label class="off-canvas-burguer"></label>
-    <nav class="off-canvas-menu">
-        <div class="off-canvas-menu-container">
-            <a href="#espacio" class="off-canvas-link" onclick="filtrarCategoria('personalizados')">Kool Personalizables</a>
-            <a href="#espacio" class="off-canvas-link" onclick="filtrarCategoria('kool')">Kool Sunglasses</a>
-            <a href="#espacio" class="off-canvas-link" onclick="filtrarCategoria('otros')">Otras Marcas</a>
-        </div>
-    </nav>
-    <!-- Fin Menú Hamburguesa -->
-   
-    <marquee class="behavior" id="behavior">Envios a todo el Perú</marquee>
-
-    <div id="espacio" class="espacio"></div>
-
-    <!-- Catálogo de productos -->
-    <section id="catalogo" class="catalogo">
-
-        <!-- Producto Personalizado -->
-        <div class="producto-header" data-categoria="personalizados">
-            <h2>Elije tus gasfas de Bambú Personalizables</h2>
-        </div>
-        <div class="producto" data-categoria="personalizados">
-            <div class="slider">
-                <img src="productos/Bamboo/producto1-1_KO-1502M2.jpg" alt="Imagen 1">
-                <img src="productos/Bamboo/producto1-2_KO-1502M2.jpg" alt="Imagen 2">
-                <img src="productos/Bamboo/producto1-3_KO-1502M2.jpg" alt="Imagen 3">
-            </div>
-            <div class="flecha"> >> </div>
-            <div class="info">
-                <h3 class="bamboo_p"></h3>
-                <p class="precio-producto">S/.99.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_2_meses_png.png" alt="Garantia2Meses">
-                </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas personalizadas *`KO-1502M2`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="personalizados">
-            <div class="slider">
-                <img src="productos/Bamboo/Producto2-1_KO-1506.jpg" alt="Imagen 1">
-                <img src="productos/Bamboo/Producto2-2_KO-1506.jpg" alt="Imagen 2">
-                <img src="productos/Bamboo/Producto2-3_KO-1506.jpg" alt="Imagen 3">
-            </div>
-            <div class="info">
-                <h3 class="bamboo_p"></h3>
-                <p class="precio-producto">S/.99.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_2_meses_png.png" alt="Garantia2Meses">
-                </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas personalizadas *`KO-1506`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="personalizados">
-            <div class="slider">
-                <img src="productos/Bamboo/producto3-1_KO-1507M2.jpg" alt="Imagen 1">
-                <img src="productos/Bamboo/producto3-2_KO-1507M2.jpg" alt="Imagen 2">
-                <img src="productos/Bamboo/producto3-3_KO-1507M2.jpg" alt="Imagen 3">
-                <img src="productos/Bamboo/producto3-4_KO-1507M2.jpg" alt="Imagen 4">
-            </div>
-            <div class="info">
-                <h3 class="bamboo_p"></h3>
-                <p class="precio-producto">S/.89.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_2_meses_png.png" alt="Garantia2Meses">
-                </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas personalizadas *`KO-1507M2`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="personalizados">
-            <div class="slider">
-                <img src="productos/Bamboo/producto4-1_KO-1501-7.jpg" alt="Imagen 1">
-                <img src="productos/Bamboo/producto4-2_KO-1501-7.jpg" alt="Imagen 2">
-                <img src="productos/Bamboo/producto4-3_KO-1501-7.jpg" alt="Imagen 3">
-                <img src="productos/Bamboo/producto4-4_KO-1501-7.jpg" alt="Imagen 4">
-            </div>
-            <div class="info">
-                <h3 class="bamboo_p"></h3>
-                <p class="precio-producto">S/.89.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_2_meses_png.png" alt="Garantia2Meses">
-                </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas personalizadas *`KO-1501-7`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="personalizados">
-            <div class="slider">
-                <img src="productos/Bamboo/producto6-1_KO-1510.jpg" alt="Imagen 1">
-                <img src="productos/Bamboo/producto6-2_KO-1510.jpg" alt="Imagen 2">
-                <img src="productos/Bamboo/producto6-3_KO-1510.jpg" alt="Imagen 2">
-            </div>
-            <div class="info">
-                <h3 class="bamboo_p"></h3>
-                <p class="precio-producto">S/.69.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
-                </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas personalizadas *`KO-1510`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="personalizados">
-            <div class="slider">
-                <img src="productos/Bamboo/producto7-1_KO-11023.jpg" alt="Imagen 1">
-                <img src="productos/Bamboo/producto7-2_KO-11023.jpg" alt="Imagen 2">
-                <img src="productos/Bamboo/producto7-3_KO-11023.jpg" alt="Imagen 3">
-            </div>
-            <div class="info">
-                <h3 class="bamboo_p"></h3>
-                <p class="precio-producto">S/.79.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
-                </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas personalizadas *`KO-11023`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="personalizados">
-            <div class="slider">
-                <img src="productos/Bamboo/producto8-1_KO-1049.jpg" alt="Imagen 1">
-                <img src="productos/Bamboo/producto8-2_KO-1049.jpg" alt="Imagen 2">
-                <img src="productos/Bamboo/producto8-3_KO-1049.jpg" alt="Imagen 3">
-                <img src="productos/Bamboo/producto8-4_KO-1049.jpg" alt="Imagen 4">
-            </div>
-            <div class="info">
-                <h3 class="bamboo_p"></h3>
-                <p class="precio-producto">S/.79.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
-                </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas personalizadas *`KO-1049`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="personalizados">
-            <div class="slider">
-                <img src="productos/Bamboo/producto9-1_KO-1501-M4.jpg" alt="Imagen 1">
-                <img src="productos/Bamboo/producto9-2_KO-1501-M4.jpg" alt="Imagen 2">
-                <img src="productos/Bamboo/producto9-3_KO-1501-M4.jpg" alt="Imagen 3">
-            </div>
-            <div class="info">
-                <h3 class="bamboo_p"></h3>
-                <p class="precio-producto">S/.79.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
-                </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas personalizadas *`KO-1501-M4`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="personalizados">
-            <div class="slider">
-                <img src="productos/Bamboo/producto10-1_KO-1511.jpg" alt="Imagen 1">
-                <img src="productos/Bamboo/producto10-2_KO-1511.jpg" alt="Imagen 2">
-                <img src="productos/Bamboo/producto10-3_KO-1511.jpg" alt="Imagen 3">
-            </div>
-            <div class="info">
-                <h3 class="bamboo_p"></h3>
-                <p class="precio-producto">S/.79.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
-                </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas personalizadas *`KO-1511`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="personalizados">
-            <div class="slider">
-                <img src="productos/Bamboo/producto11-1_KO-1567.jpg" alt="Imagen 1">
-                <img src="productos/Bamboo/producto11-2_KO-1567.jpg" alt="Imagen 2">
-                <img src="productos/Bamboo/producto11-3_KO-1567.jpg" alt="Imagen 3">
-                <img src="productos/Bamboo/producto11-4_KO-1567.jpg" alt="Imagen 4">
-                <img src="productos/Bamboo/producto11-5_KO-1567.jpg" alt="Imagen 5">
-                <img src="productos/Bamboo/producto11-6_KO-1567.jpg" alt="Imagen 6">
-            </div>
-            <div class="info">
-                <h3 class="bamboo_p"></h3>
-                <p class="precio-producto">S/.99.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_2_meses_png.png" alt="Garantia2Meses">
-                </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas personalizadas *`KO-1567`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="personalizados">
-            <div class="slider">
-                <img src="productos/Bamboo/producto12-1_KO-8820.jpg" alt="Imagen 1">
-                <img src="productos/Bamboo/producto12-2_KO-8820.jpg" alt="Imagen 2">
-                <img src="productos/Bamboo/producto12-3_KO-8820.jpg" alt="Imagen 3">
-                <img src="productos/Bamboo/producto12-4_KO-8820.jpg" alt="Imagen 4">
-                <img src="productos/Bamboo/producto12-5_KO-8820.jpg" alt="Imagen 5">
-            </div>
-            <div class="info">
-                <h3 class="bamboo_p"></h3>
-                <p class="precio-producto">S/.149.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_3_meses_png.png" alt="Garantia2Meses">
-                </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas personalizadas *`KO-8820`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="personalizados">
-            <div class="slider">
-                <img src="productos/Bamboo/producto13-1_KO-8831.jpg" alt="Imagen 1">
-                <img src="productos/Bamboo/producto13-2_KO-8831.jpg" alt="Imagen 2">
-                <img src="productos/Bamboo/producto13-3_KO-8831.jpg" alt="Imagen 3">
-                <img src="productos/Bamboo/producto13-4_KO-8831.jpg" alt="Imagen 4">
-                <img src="productos/Bamboo/producto13-5_KO-8831.jpg" alt="Imagen 5">
-                <img src="productos/Bamboo/producto13-6_KO-8831.jpg" alt="Imagen 6">
-            </div>
-            <div class="info">
-                <h3 class="bamboo_p"></h3>
-                <p class="precio-producto">S/.149.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_3_meses_png.png" alt="Garantia2Meses">
-                </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas personalizadas *`KO-8831`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="personalizados">
-            <div class="slider">
-                <img src="productos/Bamboo/producto14-1_KO-0425.jpg" alt="Imagen 1">
-                <img src="productos/Bamboo/producto14-2_KO-0425.jpg" alt="Imagen 2">
-                <img src="productos/Bamboo/producto14-3_KO-0425.jpg" alt="Imagen 3">
-                <img src="productos/Bamboo/producto14-4_KO-0425.jpg" alt="Imagen 4">
-            </div>
-            <div class="info">
-                <h3 class="bamboo_p"></h3>
-                <p class="precio-producto">S/.79.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_2_meses_png.png" alt="Garantia2Meses">
-                </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas personalizadas *`KO-0425`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
+        
+    <div style="height: 200px;"></div>
         
 
-        <!-- Producto Kool -->
-        <div class="producto-header" data-categoria="kool">
-            <h2>Elije tus gasfas KOOL</h2>
-        </div>
-        <div class="producto" data-categoria="kool">
-            <div class="slider">
-                <img src="productos/Kool/producto1-1_KL-1310.jpg" alt="Imagen 1">
-                <img src="productos/Kool/producto1-2_KL-1310.jpg" alt="Imagen 2">
-                <img src="productos/Kool/producto1-3_KL-1310.jpg" alt="Imagen 3">
-                <img src="productos/Kool/producto1-4_KL-1310.jpg" alt="Imagen 4">
-                <img src="productos/Kool/producto1-5_KL-1310.jpg" alt="Imagen 5">
-            </div>
-            <div class="info">
-                <h3 class="kool"></h3>
-                <p class="precio-producto">S/.69.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
-                </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KL-1310`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="kool">      
-            <div class="slider">
-                <img src="productos/Kool/producto2-1_KFE-1020.jpg" alt="Imagen 1">
-                <img src="productos/Kool/producto2-2_KFE-1020.jpg" alt="Imagen 2">
-                <img src="productos/Kool/producto2-3_KFE-1020.jpg" alt="Imagen 3">
-            </div>
-            <div class="info">
-                <h3 class="kool"></h3>
-                <p class="precio-producto">S/.49.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
-                </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KFE-1020`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="kool">  
-            <div class="slider">
-                <img src="productos/Kool/producto3-1_KFE-1021.jpg" alt="Imagen 1">
-                <img src="productos/Kool/producto3-2_KFE-1021.jpg" alt="Imagen 2">
-                <img src="productos/Kool/producto3-3_KFE-1021.jpg" alt="Imagen 3">
-            </div>
-            <div class="info">
-                <h3 class="kool"></h3>
-                <p class="precio-producto">S/.49.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
-                </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KFE-1021`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="kool">  
-           <div class="slider">
-                <img src="productos/Kool/producto4-1_KFE-1022.jpg" alt="Imagen 1">
-                <img src="productos/Kool/producto4-2_KFE-1022.jpg" alt="Imagen 2">
-                <img src="productos/Kool/producto4-3_KFE-1022.jpg" alt="Imagen 3">
-            </div>
-            <div class="info">
-                <h3 class="kool"></h3>
-                <p class="precio-producto">S/.49.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
-                </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KFE-1022`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="kool">  
-           <div class="slider">
-                <img src="productos/Kool/producto5-1_KFE-1023.jpg" alt="Imagen 1">
-                <img src="productos/Kool/producto5-2_KFE-1023.jpg" alt="Imagen 2">
-                <img src="productos/Kool/producto5-3_KFE-1023.jpg" alt="Imagen 3">
-            </div>
-            <div class="info">
-                <h3 class="kool"></h3>
-                <p class="precio-producto">S/.49.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
-                </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KFE-1023`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="kool">  
-           <div class="slider">
-                <img src="productos/Kool/producto6-1_KFE-1024.jpg" alt="Imagen 1">
-                <img src="productos/Kool/producto6-2_KFE-1024.jpg" alt="Imagen 2">
-            </div>
-            <div class="info">
-                <h3 class="kool"></h3>
-                <p class="precio-producto">S/.49.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
-                </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KE-1024`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="kool">  
-           <div class="slider">
-                <img src="productos/Kool/producto7-1_KFE-1020.jpg" alt="Imagen 1">
-                <img src="productos/Kool/producto7-2_KFE-1020.jpg" alt="Imagen 2">
-                <img src="productos/Kool/producto7-3_KFE-1020.jpg" alt="Imagen 3">
-            </div>
-            <div class="info">
-                <h3 class="kool"></h3>
-                <p class="precio-producto">S/.49.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
-                </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KFE-1020`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="kool">  
-           <div class="slider">
-                <img src="productos/Kool/producto9-1_KFE-1720.jpg" alt="Imagen 1">
-                <img src="productos/Kool/producto9-2_KFE-1720.jpg" alt="Imagen 2">
-                <img src="productos/Kool/producto9-3_KFE-1720.jpg" alt="Imagen 3">
-                <img src="productos/Kool/producto9-4_KFE-1720.jpg" alt="Imagen 4">
-                <img src="productos/Kool/producto9-5_KFE-1720.jpg" alt="Imagen 5">
-                <img src="productos/Kool/producto9-6_KFE-1720.jpg" alt="Imagen 5">
-                <img src="productos/Kool/producto9-7_KFE-1720.jpg" alt="Imagen 5">
-                <img src="productos/Kool/producto9-8_KFE-1720.jpg" alt="Imagen 5">
-            </div>
-            <div class="info">
-                <h3 class="kool"></h3>
-                <p class="precio-producto">S/.59.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
-                </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KFE-1720`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="kool">  
-           <div class="slider">
-                <img src="productos/Kool/producto10-1_KB-4580.jpg" alt="Imagen 1">
-                <img src="productos/Kool/producto10-2_KB-4580.jpg" alt="Imagen 2">
-                <img src="productos/Kool/producto10-3_KB-4580.jpg" alt="Imagen 3">
-                <img src="productos/Kool/producto10-4_KB-4580.jpg" alt="Imagen 4">
-                <img src="productos/Kool/producto10-5_KB-4580.jpg" alt="Imagen 5">
-                <img src="productos/Kool/producto10-6_KB-4580.jpg" alt="Imagen 6">
-                <img src="productos/Kool/producto10-7_KB-4580.jpg" alt="Imagen 7">
-                <img src="productos/Kool/producto10-8_KB-4580.jpg" alt="Imagen 8">
-            </div>
-            <div class="info">
-                <h3 class="kool"></h3>
-                <p class="precio-producto">S/.59.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
-                </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KB-4580`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="kool">  
-           <div class="slider">
-                <img src="productos/Kool/producto11-1_KR-9345.jpg" alt="Imagen 1">
-                <img src="productos/Kool/producto11-2_KR-9345.jpg" alt="Imagen 2">
-                <img src="productos/Kool/producto11-3_KR-9345.jpg" alt="Imagen 3">
-                <img src="productos/Kool/producto11-4_KR-9345.jpg" alt="Imagen 4">
-                <img src="productos/Kool/producto11-5_KR-9345.jpg" alt="Imagen 5">
-                <img src="productos/Kool/producto11-6_KR-9345.jpg" alt="Imagen 6">
-                <img src="productos/Kool/producto11-7_KR-9345.jpg" alt="Imagen 7">
-                <img src="productos/Kool/producto11-8_KR-9345.jpg" alt="Imagen 8">
-                <img src="productos/Kool/producto11-9_KR-9345.jpg" alt="Imagen 9">
-                <img src="productos/Kool/producto11-10_KR-9345.jpg" alt="Imagen 10">
-                <img src="productos/Kool/producto11-11_KR-9345.jpg" alt="Imagen 11">
-                <img src="productos/Kool/producto11-12_KR-9345.jpg" alt="Imagen 12">
-            </div>
-            <div class="info">
-                <h3 class="kool"></h3>
-                <p class="precio-producto">S/.49.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
-                </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KR-9345`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="kool">  
-           <div class="slider">
-                <img src="productos/Kool/producto12-1_KC-6578.jpg" alt="Imagen 1">
-                <img src="productos/Kool/producto12-2_KC-6578.jpg" alt="Imagen 2">
-                <img src="productos/Kool/producto12-3_KC-6578.jpg" alt="Imagen 3">
-                <img src="productos/Kool/producto12-4_KC-6578.jpg" alt="Imagen 4">
-                <img src="productos/Kool/producto12-5_KC-6578.jpg" alt="Imagen 5">
-                <img src="productos/Kool/producto12-6_KC-6578.jpg" alt="Imagen 6">
-            </div>
-            <div class="info">
-                <h3 class="kool"></h3>
-                <p class="precio-producto">S/.69.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
-                </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KC-6578`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-                
+    <main class="flex-container">
 
-        <!-- Producto Otros -->
-        <div class="producto-header" data-categoria="otros">
-            <h2>Elije tus gasfas en otra marca</h2>
-        </div>
-        <div class="producto" data-categoria="otros">
-            <div class="slider">
-                <img src="productos/Otros/producto2-1_KD002.jpg" alt="Imagen 1">
-                <img src="productos/Otros/producto2-2_KD002.jpg" alt="Imagen 2">
-                <img src="productos/Otros/producto2-3_KD002.jpg" alt="Imagen 3">
-                <img src="productos/Otros/producto2-4_KD002.jpg" alt="Imagen 4">
-                <img src="productos/Otros/producto2-5_KD002.jpg" alt="Imagen 5">
-            </div>
-            <div class="info">
-                <h3 class="otro"></h3>
-                <p class="precio-producto">S/.89.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_2_meses_png.png" alt="Garantia2Meses">
+        <!-- Productos Personalizables -->
+            <div class="pre-portada producto-header" id="personalizables" data-categoria="personalizados"></div>
+            <div class="portada producto-header post-personalizables" id="personalizables" data-categoria="personalizados"></div>
+            <article class="producto" data-categoria="personalizados">
+                <div class="slider">
+                    <img src="productos/Bamboo/producto12-1_KO-8820.jpg" alt="Imagen 1">
+                    <img src="productos/Bamboo/producto12-2_KO-8820.jpg" alt="Imagen 2">
+                    <img src="productos/Bamboo/producto12-3_KO-8820.jpg" alt="Imagen 3">
+                    <img src="productos/Bamboo/producto12-4_KO-8820.jpg" alt="Imagen 4">
+                    <img src="productos/Bamboo/producto12-5_KO-8820.jpg" alt="Imagen 5">
                 </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KD002`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="otros">
-            <div class="slider">
-                <img src="productos/Otros/producto3-1_KD003.jpg" alt="Imagen 1">
-                <img src="productos/Otros/producto3-2_KD003.jpg" alt="Imagen 2">
-                <img src="productos/Otros/producto3-3_KD003.jpg" alt="Imagen 3">
-            </div>
-            <div class="info">
-                <h3 class="otro"></h3>
-                <p class="precio-producto">S/.89.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_2_meses_png.png" alt="Garantia2Meses">
+                <div class="info">
+                    <h3 class="bamboo_p"></h3>
+                    <p class="precio-producto">S/.149.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_3_meses_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas personalizadas *`KO-8820`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
                 </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KD003`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="otros">
-            <div class="slider">
-                <img src="productos/Otros/producto4-1_KD004.jpg" alt="Imagen 1">
-                <img src="productos/Otros/producto4-2_KD004.jpg" alt="Imagen 2">
-                <img src="productos/Otros/producto4-3_KD004.jpg" alt="Imagen 3">
-                <img src="productos/Otros/producto4-4_KD004.jpg" alt="Imagen 4">
-                <img src="productos/Otros/producto4-5_KD004.jpg" alt="Imagen 5">
-            </div>
-            <div class="info">
-                <h3 class="otro"></h3>
-                <p class="precio-producto">S/.89.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_2_meses_png.png" alt="Garantia2Meses">
+            </article>
+            <article class="producto" data-categoria="personalizados">
+                <div class="slider">
+                    <img src="productos/Bamboo/producto13-1_KO-8831.jpg" alt="Imagen 1">
+                    <img src="productos/Bamboo/producto13-2_KO-8831.jpg" alt="Imagen 2">
+                    <img src="productos/Bamboo/producto13-3_KO-8831.jpg" alt="Imagen 3">
+                    <img src="productos/Bamboo/producto13-4_KO-8831.jpg" alt="Imagen 4">
+                    <img src="productos/Bamboo/producto13-5_KO-8831.jpg" alt="Imagen 5">
+                    <img src="productos/Bamboo/producto13-6_KO-8831.jpg" alt="Imagen 6">
                 </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KD004`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="otros">
-            <div class="slider">
-                <img src="productos/Otros/producto5-1_KD005.jpg" alt="Imagen 1">
-                <img src="productos/Otros/producto5-2_KD005.jpg" alt="Imagen 2">
-                <img src="productos/Otros/producto5-3_KD005.jpg" alt="Imagen 3">
-                <img src="productos/Otros/producto5-4_KD005.jpg" alt="Imagen 4">
-                <img src="productos/Otros/producto5-5_KD005.jpg" alt="Imagen 5">
-            </div>
-            <div class="info">
-                <h3 class="otro"></h3>
-                <p class="precio-producto">S/.89.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_2_meses_png.png" alt="Garantia2Meses">
+                <div class="info">
+                    <h3 class="bamboo_p"></h3>
+                    <p class="precio-producto">S/.149.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_3_meses_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas personalizadas *`KO-8831`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
                 </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KD005`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
-            </div>
-        </div>
-        <div class="producto" data-categoria="otros">
-            <div class="slider">
-                <img src="productos/Otros/producto6-1_KD006.jpg" alt="Imagen 1">
-                <img src="productos/Otros/producto6-2_KD006.jpg" alt="Imagen 2">
-                <img src="productos/Otros/producto6-3_KD006.jpg" alt="Imagen 3">
-            </div>
-            <div class="info">
-                <h3 class="otro"></h3>
-                <p class="precio-producto">S/.49.<sup>99</sup></p>
-                <div class="uv-pol-gar">
-                    <img src="assets/UV400.png" alt="uv400">
-                    <img src="assets/polarizado_png.png" alt="Polarizados">
-                    <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
+            </article>
+            <article class=" producto" data-categoria="personalizados">
+                <div class="slider">
+                    <img src="productos/Bamboo/Producto2-1_KO-1506.jpg" alt="Imagen 1">
+                    <img src="productos/Bamboo/Producto2-2_KO-1506.jpg" alt="Imagen 2">
+                    <img src="productos/Bamboo/Producto2-3_KO-1506.jpg" alt="Imagen 3">
                 </div>
-                <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KD006`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
-                </button>
+                <div class="info">
+                    <h3 class="bamboo_p"></h3>
+                    <p class="precio-producto">S/.99.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_2_meses_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas personalizadas *`KO-1506`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </article>
+            <article class="producto" data-categoria="personalizados">
+                <div class="slider">
+                    <img src="productos/Bamboo/producto11-1_KO-1567.jpg" alt="Imagen 1">
+                    <img src="productos/Bamboo/producto11-2_KO-1567.jpg" alt="Imagen 2">
+                    <img src="productos/Bamboo/producto11-3_KO-1567.jpg" alt="Imagen 3">
+                    <img src="productos/Bamboo/producto11-4_KO-1567.jpg" alt="Imagen 4">
+                    <img src="productos/Bamboo/producto11-5_KO-1567.jpg" alt="Imagen 5">
+                    <img src="productos/Bamboo/producto11-6_KO-1567.jpg" alt="Imagen 6">
+                </div>
+                <div class="info">
+                    <h3 class="bamboo_p"></h3>
+                    <p class="precio-producto">S/.99.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_2_meses_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas personalizadas *`KO-1567`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </article>
+            <article class="producto" data-categoria="personalizados">
+                <div class="slider">
+                    <img src="productos/Bamboo/producto3-1_KO-1507M2.jpg" alt="Imagen 1">
+                    <img src="productos/Bamboo/producto3-2_KO-1507M2.jpg" alt="Imagen 2">
+                    <img src="productos/Bamboo/producto3-3_KO-1507M2.jpg" alt="Imagen 3">
+                    <img src="productos/Bamboo/producto3-4_KO-1507M2.jpg" alt="Imagen 4">
+                </div>
+                <div class="info">
+                    <h3 class="bamboo_p"></h3>
+                    <p class="precio-producto">S/.89.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_2_meses_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas personalizadas *`KO-1507M2`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </article>
+            <article class="producto" data-categoria="personalizados">
+                <div class="slider">
+                    <img src="productos/Bamboo/producto4-1_KO-1501-7.jpg" alt="Imagen 1">
+                    <img src="productos/Bamboo/producto4-2_KO-1501-7.jpg" alt="Imagen 2">
+                    <img src="productos/Bamboo/producto4-3_KO-1501-7.jpg" alt="Imagen 3">
+                    <img src="productos/Bamboo/producto4-4_KO-1501-7.jpg" alt="Imagen 4">
+                </div>
+                <div class="info">
+                    <h3 class="bamboo_p"></h3>
+                    <p class="precio-producto">S/.89.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_2_meses_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas personalizadas *`KO-1501-7`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </article>
+            <article class="producto" data-categoria="personalizados">
+                <div class="slider">
+                    <img src="productos/Bamboo/producto7-1_KO-11023.jpg" alt="Imagen 1">
+                    <img src="productos/Bamboo/producto7-2_KO-11023.jpg" alt="Imagen 2">
+                    <img src="productos/Bamboo/producto7-3_KO-11023.jpg" alt="Imagen 3">
+                </div>
+                <div class="info">
+                    <h3 class="bamboo_p"></h3>
+                    <p class="precio-producto">S/.79.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas personalizadas *`KO-11023`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </article>
+            <article class="producto" data-categoria="personalizados">
+                <div class="slider">
+                    <img src="productos/Bamboo/producto8-1_KO-1049.jpg" alt="Imagen 1">
+                    <img src="productos/Bamboo/producto8-2_KO-1049.jpg" alt="Imagen 2">
+                    <img src="productos/Bamboo/producto8-3_KO-1049.jpg" alt="Imagen 3">
+                    <img src="productos/Bamboo/producto8-4_KO-1049.jpg" alt="Imagen 4">
+                </div>
+                <div class="info">
+                    <h3 class="bamboo_p"></h3>
+                    <p class="precio-producto">S/.79.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas personalizadas *`KO-1049`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </article>
+            <article class="producto" data-categoria="personalizados">
+                <div class="slider">
+                    <img src="productos/Bamboo/producto9-1_KO-1501-M4.jpg" alt="Imagen 1">
+                    <img src="productos/Bamboo/producto9-2_KO-1501-M4.jpg" alt="Imagen 2">
+                    <img src="productos/Bamboo/producto9-3_KO-1501-M4.jpg" alt="Imagen 3">
+                </div>
+                <div class="info">
+                    <h3 class="bamboo_p"></h3>
+                    <p class="precio-producto">S/.79.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas personalizadas *`KO-1501-M4`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </article>
+            <article class="producto" data-categoria="personalizados">
+                <div class="slider">
+                    <img src="productos/Bamboo/producto10-1_KO-1511.jpg" alt="Imagen 1">
+                    <img src="productos/Bamboo/producto10-2_KO-1511.jpg" alt="Imagen 2">
+                    <img src="productos/Bamboo/producto10-3_KO-1511.jpg" alt="Imagen 3">
+                </div>
+                <div class="info">
+                    <h3 class="bamboo_p"></h3>
+                    <p class="precio-producto">S/.79.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas personalizadas *`KO-1511`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </article>
+            <article class="producto" data-categoria="personalizados">
+                <div class="slider">
+                    <img src="productos/Bamboo/producto14-1_KO-0425.jpg" alt="Imagen 1">
+                    <img src="productos/Bamboo/producto14-2_KO-0425.jpg" alt="Imagen 2">
+                    <img src="productos/Bamboo/producto14-3_KO-0425.jpg" alt="Imagen 3">
+                    <img src="productos/Bamboo/producto14-4_KO-0425.jpg" alt="Imagen 4">
+                </div>
+                <div class="info">
+                    <h3 class="bamboo_p"></h3>
+                    <p class="precio-producto">S/.79.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_2_meses_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas personalizadas *`KO-0425`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </article>
+            <article class="producto" data-categoria="personalizados">
+                <div class="slider">
+                    <img src="productos/Bamboo/producto6-1_KO-1510.jpg" alt="Imagen 1">
+                    <img src="productos/Bamboo/producto6-2_KO-1510.jpg" alt="Imagen 2">
+                    <img src="productos/Bamboo/producto6-3_KO-1510.jpg" alt="Imagen 2">
+                </div>
+                <div class="info">
+                    <h3 class="bamboo_p"></h3>
+                    <p class="precio-producto">S/.69.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas personalizadas *`KO-1510`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </article>
+        
+
+            <!-- Productos Kool -->
+            <div class="pre-portada producto-header" id="kool" data-categoria="kool"></div>
+            <div class="portada producto-header post-koolperu" id="kool" data-categoria="kool"></div>
+            <div class="producto" data-categoria="kool">
+                <div class="slider">
+                    <img src="productos/Kool/producto1-1_KL-1310.jpg" alt="Imagen 1">
+                    <img src="productos/Kool/producto1-2_KL-1310.jpg" alt="Imagen 2">
+                    <img src="productos/Kool/producto1-3_KL-1310.jpg" alt="Imagen 3">
+                    <img src="productos/Kool/producto1-4_KL-1310.jpg" alt="Imagen 4">
+                    <img src="productos/Kool/producto1-5_KL-1310.jpg" alt="Imagen 5">
+                </div>
+                <div class="info">
+                    <h3 class="kool"></h3>
+                    <p class="precio-producto">S/.69.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KL-1310`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
             </div>
-        </div>
+            <div class="producto" data-categoria="kool">      
+                <div class="slider">
+                    <img src="productos/Kool/producto2-1_KFE-1020.jpg" alt="Imagen 1">
+                    <img src="productos/Kool/producto2-2_KFE-1020.jpg" alt="Imagen 2">
+                    <img src="productos/Kool/producto2-3_KFE-1020.jpg" alt="Imagen 3">
+                </div>
+                <div class="info">
+                    <h3 class="kool"></h3>
+                    <p class="precio-producto">S/.49.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KFE-1020`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="kool">  
+                <div class="slider">
+                    <img src="productos/Kool/producto3-1_KFE-1021.jpg" alt="Imagen 1">
+                    <img src="productos/Kool/producto3-2_KFE-1021.jpg" alt="Imagen 2">
+                    <img src="productos/Kool/producto3-3_KFE-1021.jpg" alt="Imagen 3">
+                </div>
+                <div class="info">
+                    <h3 class="kool"></h3>
+                    <p class="precio-producto">S/.49.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KFE-1021`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="kool">  
+               <div class="slider">
+                    <img src="productos/Kool/producto4-1_KFE-1022.jpg" alt="Imagen 1">
+                    <img src="productos/Kool/producto4-2_KFE-1022.jpg" alt="Imagen 2">
+                    <img src="productos/Kool/producto4-3_KFE-1022.jpg" alt="Imagen 3">
+                </div>
+                <div class="info">
+                    <h3 class="kool"></h3>
+                    <p class="precio-producto">S/.49.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KFE-1022`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="kool">  
+               <div class="slider">
+                    <img src="productos/Kool/producto5-1_KFE-1023.jpg" alt="Imagen 1">
+                    <img src="productos/Kool/producto5-2_KFE-1023.jpg" alt="Imagen 2">
+                    <img src="productos/Kool/producto5-3_KFE-1023.jpg" alt="Imagen 3">
+                </div>
+                <div class="info">
+                    <h3 class="kool"></h3>
+                    <p class="precio-producto">S/.49.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KFE-1023`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="kool">  
+               <div class="slider">
+                    <img src="productos/Kool/producto6-1_KFE-1024.jpg" alt="Imagen 1">
+                    <img src="productos/Kool/producto6-2_KFE-1024.jpg" alt="Imagen 2">
+                </div>
+                <div class="info">
+                    <h3 class="kool"></h3>
+                    <p class="precio-producto">S/.49.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KE-1024`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="kool">  
+               <div class="slider">
+                    <img src="productos/Kool/producto7-1_KFE-1020.jpg" alt="Imagen 1">
+                    <img src="productos/Kool/producto7-2_KFE-1020.jpg" alt="Imagen 2">
+                    <img src="productos/Kool/producto7-3_KFE-1020.jpg" alt="Imagen 3">
+                </div>
+                <div class="info">
+                    <h3 class="kool"></h3>
+                    <p class="precio-producto">S/.49.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KFE-1020`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="kool">  
+               <div class="slider">
+                    <img src="productos/Kool/producto9-1_KFE-1720.jpg" alt="Imagen 1">
+                    <img src="productos/Kool/producto9-2_KFE-1720.jpg" alt="Imagen 2">
+                    <img src="productos/Kool/producto9-3_KFE-1720.jpg" alt="Imagen 3">
+                    <img src="productos/Kool/producto9-4_KFE-1720.jpg" alt="Imagen 4">
+                    <img src="productos/Kool/producto9-5_KFE-1720.jpg" alt="Imagen 5">
+                    <img src="productos/Kool/producto9-6_KFE-1720.jpg" alt="Imagen 6">
+                    <img src="productos/Kool/producto9-7_KFE-1720.jpg" alt="Imagen 7">
+                    <img src="productos/Kool/producto9-8_KFE-1720.jpg" alt="Imagen 8">
+                </div>
+                <div class="info">
+                    <h3 class="kool"></h3>
+                    <p class="precio-producto">S/.59.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KFE-1720`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="kool">  
+               <div class="slider">
+                    <img src="productos/Kool/producto10-1_KB-4580.jpg" alt="Imagen 1">
+                    <img src="productos/Kool/producto10-2_KB-4580.jpg" alt="Imagen 2">
+                    <img src="productos/Kool/producto10-3_KB-4580.jpg" alt="Imagen 3">
+                    <img src="productos/Kool/producto10-4_KB-4580.jpg" alt="Imagen 4">
+                    <img src="productos/Kool/producto10-5_KB-4580.jpg" alt="Imagen 5">
+                    <img src="productos/Kool/producto10-6_KB-4580.jpg" alt="Imagen 6">
+                    <img src="productos/Kool/producto10-7_KB-4580.jpg" alt="Imagen 7">
+                    <img src="productos/Kool/producto10-8_KB-4580.jpg" alt="Imagen 8">
+                </div>
+                <div class="info">
+                    <h3 class="kool"></h3>
+                    <p class="precio-producto">S/.59.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KB-4580`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="kool">  
+               <div class="slider">
+                    <img src="productos/Kool/producto11-1_KR-9345.jpg" alt="Imagen 1">
+                    <img src="productos/Kool/producto11-2_KR-9345.jpg" alt="Imagen 2">
+                    <img src="productos/Kool/producto11-3_KR-9345.jpg" alt="Imagen 3">
+                    <img src="productos/Kool/producto11-4_KR-9345.jpg" alt="Imagen 4">
+                    <img src="productos/Kool/producto11-5_KR-9345.jpg" alt="Imagen 5">
+                    <img src="productos/Kool/producto11-6_KR-9345.jpg" alt="Imagen 6">
+                    <img src="productos/Kool/producto11-7_KR-9345.jpg" alt="Imagen 7">
+                    <img src="productos/Kool/producto11-8_KR-9345.jpg" alt="Imagen 8">
+                    <img src="productos/Kool/producto11-9_KR-9345.jpg" alt="Imagen 9">
+                    <img src="productos/Kool/producto11-10_KR-9345.jpg" alt="Imagen 10">
+                    <img src="productos/Kool/producto11-11_KR-9345.jpg" alt="Imagen 11">
+                    <img src="productos/Kool/producto11-12_KR-9345.jpg" alt="Imagen 12">
+                </div>
+                <div class="info">
+                    <h3 class="kool"></h3>
+                    <p class="precio-producto">S/.49.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KR-9345`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="kool">  
+               <div class="slider">
+                    <img src="productos/Kool/producto12-1_KC-6578.jpg" alt="Imagen 1">
+                    <img src="productos/Kool/producto12-2_KC-6578.jpg" alt="Imagen 2">
+                    <img src="productos/Kool/producto12-3_KC-6578.jpg" alt="Imagen 3">
+                    <img src="productos/Kool/producto12-4_KC-6578.jpg" alt="Imagen 4">
+                    <img src="productos/Kool/producto12-5_KC-6578.jpg" alt="Imagen 5">
+                    <img src="productos/Kool/producto12-6_KC-6578.jpg" alt="Imagen 6">
+                </div>
+                <div class="info">
+                    <h3 class="kool"></h3>
+                    <p class="precio-producto">S/.69.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KC-6578`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </div>
+        
 
-        </div>
+            <!-- Kdeam -->
+            <div class="pre-portada producto-header" id="kdeam" data-categoria="otros"></div>
+            <div class="portada producto-header post-otras-marcas" id="kdeam" data-categoria="otros"></div>
+            <div class="producto" data-categoria="otros">
+                <div class="slider">
+                    <img src="productos/Otros/producto2-1_KD002.jpg" alt="Imagen 1">
+                    <img src="productos/Otros/producto2-2_KD002.jpg" alt="Imagen 2">
+                    <img src="productos/Otros/producto2-3_KD002.jpg" alt="Imagen 3">
+                    <img src="productos/Otros/producto2-4_KD002.jpg" alt="Imagen 4">
+                    <img src="productos/Otros/producto2-5_KD002.jpg" alt="Imagen 5">
+                </div>
+                <div class="info">
+                    <h3 class="otro"></h3>
+                    <p class="precio-producto">S/.89.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_2_meses_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KD002`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="otros">
+                <div class="slider">
+                    <img src="productos/Otros/producto3-1_KD003.jpg" alt="Imagen 1">
+                    <img src="productos/Otros/producto3-2_KD003.jpg" alt="Imagen 2">
+                    <img src="productos/Otros/producto3-3_KD003.jpg" alt="Imagen 3">
+                </div>
+                <div class="info">
+                    <h3 class="otro"></h3>
+                    <p class="precio-producto">S/.89.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_2_meses_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KD003`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="otros">
+                <div class="slider">
+                    <img src="productos/Otros/producto4-1_KD004.jpg" alt="Imagen 1">
+                    <img src="productos/Otros/producto4-2_KD004.jpg" alt="Imagen 2">
+                    <img src="productos/Otros/producto4-3_KD004.jpg" alt="Imagen 3">
+                    <img src="productos/Otros/producto4-4_KD004.jpg" alt="Imagen 4">
+                    <img src="productos/Otros/producto4-5_KD004.jpg" alt="Imagen 5">
+                </div>
+                <div class="info">
+                    <h3 class="otro"></h3>
+                    <p class="precio-producto">S/.89.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_2_meses_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KD004`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="otros">
+                <div class="slider">
+                    <img src="productos/Otros/producto5-1_KD005.jpg" alt="Imagen 1">
+                    <img src="productos/Otros/producto5-2_KD005.jpg" alt="Imagen 2">
+                    <img src="productos/Otros/producto5-3_KD005.jpg" alt="Imagen 3">
+                    <img src="productos/Otros/producto5-4_KD005.jpg" alt="Imagen 4">
+                    <img src="productos/Otros/producto5-5_KD005.jpg" alt="Imagen 5">
+                </div>
+                <div class="info">
+                    <h3 class="otro"></h3>
+                    <p class="precio-producto">S/.89.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_2_meses_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KD005`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="otros">
+                <div class="slider">
+                    <img src="productos/Otros/producto6-1_KD006.jpg" alt="Imagen 1">
+                    <img src="productos/Otros/producto6-2_KD006.jpg" alt="Imagen 2">
+                    <img src="productos/Otros/producto6-3_KD006.jpg" alt="Imagen 3">
+                </div>
+                <div class="info">
+                    <h3 class="otro"></h3>
+                    <p class="precio-producto">S/.49.<sup>99</sup></p>
+                    <div class="uv-pol-gar">
+                        <img src="assets/UV400.png" alt="uv400">
+                        <img src="assets/polarizado_png.png" alt="Polarizados">
+                        <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
+                    </div>
+                    <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KD006`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </div>
 
 
+            <!-- Accesorios -->
+             <div class="pre-portada producto-header" id="accesorios" data-categoria="accesorios"></div>
+             <div class="portada producto-header post-accesorios" id="accesorios" data-categoria="accesorios"></div>
+             <div class="producto" data-categoria="accesorios">
+                 <div class="slider">
+                     <img src="productos/Accesorios/acce_01-01.jpg" alt="Imagen 1">
+                     <img src="productos/Accesorios/acce_01-02.jpg" alt="Imagen 2">
+                     <img src="productos/Accesorios/acce_01-03.jpg" alt="Imagen 3">
+                     <img src="productos/Accesorios/acce_01-04.jpg" alt="Imagen 4">
+                     <img src="productos/Accesorios/acce_01-05.jpg" alt="Imagen 5">
+                 </div>
+                 <div class="info">
+                     <h3 class="otro"></h3>
+                     <p class="precio-producto">S/.11.<sup>99</sup></p>
+                     <!-- <div class="uv-pol-gar">
+                         <img src="assets/UV400.png" alt="uv400">
+                         <img src="assets/polarizado_png.png" alt="Polarizados">
+                         <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
+                     </div> -->
+                     <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KD006`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                     </button>
+                 </div>
+             </div>
+             <div class="producto" data-categoria="accesorios">
+                 <div class="slider">
+                     <img src="productos/Accesorios/acce_02-01.jpg" alt="Imagen 1">
+                     <img src="productos/Accesorios/acce_02-02.jpg" alt="Imagen 2">
+                     <img src="productos/Accesorios/acce_02-03.jpg" alt="Imagen 3">
+                     <img src="productos/Accesorios/acce_02-04.jpg" alt="Imagen 4">
+                 </div>
+                 <div class="info">
+                     <h3 class="otro"></h3>
+                     <p class="precio-producto">S/.9.<sup>99</sup></p>
+                     <!-- <div class="uv-pol-gar">
+                         <img src="assets/UV400.png" alt="uv400">
+                         <img src="assets/polarizado_png.png" alt="Polarizados">
+                         <img src="assets/garantia_1_mes_png.png" alt="Garantia2Meses">
+                     </div> -->
+                     <button class="btn-whatsapp" onclick="comprarPorWhatsapp('Hola, estoy interesado en estas gafas *`KD006`*, puedes brindarme mas información por favor, gracias!!!.')"><i class="fa-brands fa-whatsapp"></i>
+                     </button>
+                 </div>
+             </div>
 
-    </section>
+    </main>
+    <br><br>
 
-    <footer class="footer">
+
+    <footer>
 
     </footer>
+
+
+     <!-- Cierre automático al dar clic en una categoría -->
+     <script>
+        document.querySelectorAll('.link').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('toggle-menu').checked = false;
+            })
+        })
+    </script>
 </body>
 </html>
