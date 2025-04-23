@@ -1,207 +1,259 @@
-/* Estilos CSS para la tienda de lentes de sol */
 html{
-    background-color: #000000;
-    color: #f5f5f5;
     box-sizing: border-box;
+    font-size: 16px;
+    --color-letra: #fff;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    position: relative;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
 }
 
 img{
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
-*,
-*::after,
-*::before{
-    scroll-behavior: smooth;
-    box-sizing:inherit
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-}
-
-.header{
-    background-color: #000;
-    position: sticky;
-    top: 0px;
-    height: 2.5rem;
-    z-index: 996;
-    padding-bottom: 3rem;
-    
-}
-
-
-.header-logo{
-    /* width: 100%; */
-    height: 2.5rem;
-}
-
-.header-logo img{
-    margin-top: .5rem;
-    height: 3rem;
-    display: flex;
-    justify-self: center;
-    overflow-y:hidden;
-}
-
 .hero-image{
-    max-width: 100%;
-    height: 90vh;
-    background: url("../assets/portada_2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: .5rem;
-    /* margin-bottom: 1rem; */
-}
-
-.behavior{
-    background-color: #ffff00;
-    color: #000000;
-    padding: 4px;
-    position: sticky;
-    top: 3rem;
-    font-size: .9rem;
-    z-index: 995;
-}
-
-/*Menú Hamburguesa*/
-.off-canvas-btn{
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    z-index: 999;
-    width: 3rem;
-    height: 3rem;
-    opacity: 0;
-}
-
-.off-canvas-burguer{
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    z-index: 998;
-    width: 3rem;
-    height: .6rem;
-    background-color: #d5fa05;
-    border-radius: .3rem;
-    transform-origin: top left;
-    transform: rotate(0deg) translate(0, -1.2rem);
-    transition: transform 500ms ease, background-color 500ms ease;
-}
-
-.off-canvas-burguer::before,
-.off-canvas-burguer::after{
-    content: "";
-    display: block;
+    position: relative;
     width: 100%;
-    height: 0.6rem;
-    background-color: #d000;
-    border-radius: .3rem;
-    transition: transform 500ms ease;    
-}
-
-.off-canvas-burguer::before{
-    transform: rotate(0deg) translate(0, -0.9rem);
-    background-color: #d5fa05;
-}
-
-.off-canvas-burguer::after{
-    transform: rotate(0deg) translate(0, 0.3rem);
-    background-color: #d5fa05;
-}
-
-.off-canvas-btn:checked + .off-canvas-burguer{
-    background-color: transparent;
-}
-
-.off-canvas-btn:checked + .off-canvas-burguer::before{
-    transform: rotate(45deg) translate(0,0);
-}
-
-.off-canvas-btn:checked + .off-canvas-burguer::after{
-    transform: rotate(-45deg) translate(.4rem,-.5rem);
-}
-
-.off-canvas-menu{
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 997;
+    height: 100vh;
+    background: url("../assets/hero_image_2.jpg") center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0009;
-    transition: transform 500ms ease-in-out;
-    transform: translate(0, -100%); /*Sale de arriba*/
-    transform: translate(0, 100%); /*Sale de abajo*/
-    transform: translate(-100%, 0); /*Sale de la izquierda*/
-    transform: translate(100%, 0); /*Sale de la derecha*/
+    transform: translateY(-105px);
 }
 
-.off-canvas-btn:checked ~ .off-canvas-menu{
-    transform: translate(0, 0);
-}
-
-.off-canvas-menu-container{
+nav{
+    position: sticky;
+    top: 0;
     width: 100%;
-    height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap:50px;
+    padding: 10px 0;
+    transition: background-color 0.3s;
+    z-index: 100;
+    /* backdrop-filter: blur(10px); */
 }
 
-.off-canvas-menu-container a:focus ~ .off-canvas-menu{
-    transform: translate(100%, 0);
+nav.scrolled{
+    background-color: #1a1919;
 }
 
-.off-canvas-link{
-    border-bottom: thin solid #ffff00;
-    padding: 2rem;
-    font-size: 1.5rem;
-    text-align: center;
-    text-decoration: none;
+nav a{
     color: #fff;
-    font-weight: bold;
-    transition: background-color 300ms ease;
+    font-size: 20px;
+    padding: 5px 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.off-canvas-link:first-child{
-    border-top: thin solid #ffff00;
+nav a:hover{
+    background-color: rgba(200, 198, 198, 0.6);
+    border-radius: 20px;
+    transform: scale(1.5);
 }
 
-.off-canvas-link:hover{
-    background-color: #d00;
-}
-/*Fin Menú Hamburguesa*/
-
-.catalogo {
-    padding: 0 20px;
-    text-align: center;
+.logo{
+    margin: 0 20px;
 }
 
+.logo img{
+    height: 60px;
+}
 
-.catalogo h2{
-    font-size: 2rem;
+.pre-portada{
+    background-color: #000;
+    width: inherit;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.portada{
+    border: thin solid #fff;
+    background-color: skyblue;
+    width: inherit;
+    height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.menu-btn, .menu{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    nav a {
+        display: none;
+    }
+    .logo img {
+        height: 40px;
+    }
+
+    .portada{
+        width: 100%;
+        height: 20vh;
+    }
+
+    .burger{
+        display:block;
+    }
+
+    .menu-btn, .menu{
+        display: block;
+    }
+
+    /* Ocultamos el checkbox */
+    #toggle-menu{
+        display: none;
+    }
+
+    /* Botón para abrir el menú */
+    .menu-btn{
+        position: fixed;
+        top: 230px;
+        right: 0;
+        background-color: #fff;
+        color: #000;
+        padding: 10px 15px;
+        border-radius: 10px 0 0 10px;
+        cursor: pointer;
+        font-weight: bold;
+        z-index: 1001;
+        transition: opacity .3s ease;
+    }
+
+
+    /* Ocultar el botón cuando el menú está abierto */
+    #toggle-menu:checked + .menu-btn{
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    /* Menú oculto por defecto */
+    .menu{
+        position: fixed;
+        top: 0;
+        right: 0;
+        transform: translateX(260px);
+        width: 70%;
+        height: 100vh;
+        background: #ffffff;
+        transition: rigth .10s ease;
+        z-index: 1000;
+        padding: 20px;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, .2);
+    }
+
+    /* Mostrar menú cuando el checkbox está activado */
+    #toggle-menu:checked ~ .menu{
+        transform: translateX(0);
+        transition: transform .3s ease;
+    }
+
+    .menu h3{
+        margin-bottom: 20px;
+    }
+
+    .menu a{
+        display: block;
+        color: #000;
+        text-decoration: none;
+        margin: 10px 0;
+        font-size: 18px;
+        border-bottom: 1px solid #444;
+        padding-bottom: 5px;
+    }
+
+    /* Fondo oscuro cuando el menú está abierto */
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, .5);
+        z-index: 900;
+        display: none;
+    }
+
+    #toggle-menu:checked ~ .overlay {
+        display: block;
+    }
+
+    .container-rrss{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .container-rrss a i{
+        font-size: x-large;
+    }
+
+
+}
+
+
+.post-personalizables{
+    background: url("../assets/post-personalizables.jpg") center/cover no-repeat;
+}
+
+.post-koolperu{
+    background: url("../assets/post-koolperu.jpg") center/cover no-repeat;
+}
+
+.post-otras-marcas{
+    background: url("../assets/post-otras-marcas.jpg") center/cover no-repeat;
+}
+
+.post-accesorios{
+    background: url("../assets/post-accesorios.jpg") center/cover  no-repeat;
+}
+
+.flex-container{
+    background-color: #000;
+    width: 80vw;
+    /* height: auto; */
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-bottom: 40px; */
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 0 100px;
 }
 
 .producto {
-    border: 1px solid #ddd;
+    width: 250px;
     margin: 20px 20px 0 20px;
+    color: var(--color-letra);
+    border: 1px solid #ddd;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(252, 252, 252, 0.5);
-    width: 300px;
     margin-left: auto;
     margin-right: auto;
-    vertical-align: top;
     margin-bottom: -5px;
     position: relative;
 }
@@ -212,7 +264,7 @@ body {
     gap: 10px;
 }
 
-.slider img {
+.slider > img {
     width: 100%;
     border-radius: 5px;
 }
@@ -221,72 +273,11 @@ body {
     position: absolute;
     top: -6px ;
     left: 10px;
-    background-color: red;
+    background-color: #fa0404;
     padding: 2px 5px;
     border-radius: 0 0 10px;
     font-weight: bold;
 }
-
-@keyframes pulse {
-
-    0%,50%{transform: translateY(0);}
-    40%{transform: translateY(-10px);}
-    60%{transform: translateY(-5px);}
-}
-
-.flecha{
-    position: absolute;
-    top: 53%;
-    right: 25px;
-    color: #000;
-    font-size: 20px;
-    font-weight: bold;
-    width: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    animation: flechas 1s linear infinite;
-}
-
-@keyframes flechas {
-
-    0%,50%{transform: translateX(0);}
-    40%{transform: translateX(-5px);}
-    60%{transform: translateX(-3px);}
-
-}
-
-.btn-whatsapp {
-    background-color: #25D366;
-    color: #0a0a0a;
-    font-weight: bold;
-    font-size: 1rem;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    animation: pulse 2s infinite;
-}
-
-.btn-whatsapp::after{
-    content: "comprar ahora";
-}
-
-.otro::before{
-    content: "KdeamSunglasses";
-}
-
-.kool::before{
-    content: "KoolPeruSunglasses";
-}
-
-.bamboo_p{
-    margin: 10px 0;
-}
-
-.bamboo_p::before{
-    content: "Kool Personalizables";
-}
-
 
 .uv-pol-gar{
     display: flex;
@@ -300,6 +291,41 @@ body {
    height: 4rem;
 }
 
-.espacio{
-    margin-bottom: 3rem;
+.btn-whatsapp {
+    width: 100%;
+    background-color: #25D366;
+    color: #0a0a0a;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+
+}
+
+.btn-whatsapp::after{
+    content: "comprar ahora";
+}
+
+@keyframes pulse {
+
+    0%,50%{transform: translateY(0);}
+    40%{transform: translateY(-10px);}
+    60%{transform: translateY(-5px);}
+}
+
+h3{
+    text-align: center;
+}
+
+
+.bamboo_p::before{
+    content: "Personalizables";
+}
+
+
+.kool::before{
+    content: "KoolPeruSunglasses";
 }
