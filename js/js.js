@@ -1,24 +1,26 @@
-// // Función para redirigir a WhatsApp
-// function comprarPorWhatsapp(mensaje) {
-//     const numeroWhatsApp = "51964774354"; // Reemplaza con tu número
-//     const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
-//     window.open(url, '_blank');
-// }
+window.addEventListener('scroll', function() {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 500) {
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
+});
 
- // Función para filtrar productos por categoría
- function filtrarCategoria(categoria) {
-     const productos = document.querySelectorAll('.producto, .producto-header');
-     const botones = document.querySelectorAll('.menu a');
+// Función para filtrar productos por categoría
+function filtrarCategoria(categoria) {
+    const productos = document.querySelectorAll('.producto, .producto-header');
+    const botones = document.querySelectorAll('.menu a');
 
-     // Mostrar u ocultar productos según la categoría
-     productos.forEach(producto => {
-         if (producto.getAttribute('data-categoria') === categoria || categoria === 'todos') {
-             producto.style.display = 'inline-block';
-         } else {
-             producto.style.display = 'none';
-         }
-     });
- }
+    // Mostrar u ocultar productos según la categoría
+    productos.forEach(producto => {
+        if (producto.getAttribute('data-categoria') === categoria || categoria === 'todos') {
+            producto.style.display = 'inline-block';
+        } else {
+            producto.style.display = 'none';
+        }
+    });
+}
 
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".btn-whatsapp").forEach(boton => {
@@ -42,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Construir el mensaje de WhatsApp
             // ${nombreProducto}
             let mensaje = encodeURIComponent(
-                `Hola, quiero comprar este producto: \n\nImagen del producto: ${urlImagen}\n\n${precioProducto}`
+                `Hola, quiero comprar este producto: \n\nImagen del producto: ${urlImagen}\n\nPrecio:${precioProducto}`
             );
 
             // Crear enlace de WhatsApp
@@ -53,5 +55,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
-
